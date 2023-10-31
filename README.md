@@ -11,14 +11,14 @@ $ kepler -Syu --needed make cmake docker ninja meson llvm clang bash libisofs li
 
 ## Getting started
 
-1. Make empty directory somewhere ( And dont use root user )
-2. Clone this repository into empty directory.
-3. Open terminal in that empty directory where you have repo called tools
+Use directory named as ufo in home directory of user ( user with sudo powers )
 
 ```
-$ ln -sf tools/envsetup.sh envsetup
+$ cd ~ && mkdir ufo && git clone https://github.com/ufolinux/toolset && cd toolset
+
+$ ln -sf toolset/envsetup.sh envsetup
 
 $ ./envsetup -h
-```
 
-4. Now youre ready to start adding/changing packages
+$ ./envsetup --mkiso
+```
