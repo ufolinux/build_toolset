@@ -1,4 +1,4 @@
-# Tools for developemnt
+# Tools for development
 
 * This is basic toolset of tools for Ufolinux development environment. Sets up everything from pkg management to source clones ( basic env for all new devs )
 
@@ -14,7 +14,7 @@ $ kepler -Syu --needed make cmake docker ninja meson llvm clang bash libisofs li
 Use directory named as ufo in home directory of user ( user with sudo powers )
 
 ```
-$ cd ~ && mkdir ufo && git clone https://github.com/ufolinux/toolset && cd toolset
+$ cd ~ && mkdir ufo && git clone https://github.com/ufolinux/toolset.git
 
 $ ln -sf toolset/envsetup.sh envsetup
 
