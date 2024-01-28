@@ -14,9 +14,11 @@ $ kepler -Syu --needed make cmake docker ninja meson llvm clang bash libisofs li
 Use directory named as ufo in home directory of user ( user with sudo powers )
 
 ```
-$ cd ~ && mkdir ufo && git clone https://github.com/ufolinux/toolset.git
+$ cd ~ && mkdir ufo/build && cd ufo/build && git clone https://github.com/ufolinux/toolset.git
 
-$ ln -sf toolset/envsetup.sh envsetup
+$ cd ~/ufo
+
+$ ln -sf build/toolset/envsetup.sh envsetup
 
 $ ./envsetup -h
 
