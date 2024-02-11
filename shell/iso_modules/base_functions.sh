@@ -44,6 +44,10 @@ rootfs_defaults() {
     export ROOT_PASSWORD=$(echo toor | openssl passwd -1 -stdin)
     export NON_ROOT_PASSWORD=$(echo $DISTRO_NAME | openssl passwd -1 -stdin)
 
+    # Running ldconfig to issues for some libraries
+    message Running ldconfig
+    exec_rootfs ldconfig
+
     message Creating non-root user
     # Lets add non-root user ( with home dir + add to wheel + adm groups )
     exec_rootfs useradd -m -G wheel,adm $DISTRO_NAME
