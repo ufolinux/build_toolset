@@ -42,7 +42,7 @@ export IGNORE_LOCKUP=yes
 export PACKAGE_MANAGER=kepler
 
 # This is used in mkiso mainly vmlinuz-DISTRONAME
-export DISTRO_NAME=ufo
+export DISTRO_NAME=ufolinux
 
 ##
 # ISO Creator specific variables
